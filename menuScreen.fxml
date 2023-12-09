@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="880.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vaibhavap.menuController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="700.0" opacity="0.88" pickOnBounds="true">
+         <image>
+            <Image url="@menuBackground.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="#eb0c0c" layoutX="344.0" layoutY="245.0" radius="100.0" stroke="#39259a" strokeType="INSIDE" strokeWidth="5.0" />
+      <Label layoutX="301.0" layoutY="230.0" prefHeight="53.0" prefWidth="113.0" text="   PLAY" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label prefHeight="64.0" prefWidth="184.0" text="SAVED GAMES" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="playScreenSwitcher" layoutX="316.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToPlayscreen" opacity="0.46" prefHeight="31.0" prefWidth="57.0" />
+      <Button mnemonicParsing="false" opacity="0.47" prefHeight="64.0" prefWidth="172.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="366.0" layoutX="64.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="113.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000307" height="366.0" layoutX="444.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <ImageView fitHeight="31.0" fitWidth="65.0" layoutX="105.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@charImage.png" />
+         </image>
+      </ImageView>
+      <Line endX="174.5" endY="534.5" startX="425.0" startY="408.0" strokeWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f80a32" height="18.0" layoutX="535.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+   </children>
+</AnchorPane>
